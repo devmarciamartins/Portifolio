@@ -7,16 +7,19 @@
 }
 
 body, html {
-    background-image: linear-gradient(to right, #362729, #8F5D52);
+    background:  linear-gradient( -130grad, #8F5D52  50%, #362729 50%);
     font-family: Arial, Helvetica, sans-serif;
 }
 
 header {
+    position: fixed;
+    top: 0;
+    width: 100%;
     display: flex;
     justify-content: space-around;
     background-color: #edecec1e;
     border-bottom: 1px solid rgba(255, 255, 255, 0.409);
-    padding: 10px 0px 10px 0px;
+    padding: 10px 0px 15px 0px;
 }
 
 #logo > img {
@@ -31,9 +34,10 @@ header {
 
 #menu {
     display: flex;
-    gap: 20px;
+    gap: 40px;
     height: 100%;
     align-items: center;
+    transform: translate(-150px);
 }
 
 #menu > li {
@@ -48,7 +52,7 @@ header {
 
 main {
     display: flex;
-    height: calc(100vh - 90px);
+    height: 100vh;
 }
 
 #oi {
@@ -62,14 +66,14 @@ main {
 }
 
 #oi > h1 > strong {
-    font-size: 2em;
+    font-size: 1.8em;
 }
 
 #oi > p {
     background-color: #8F5D52;
     text-align: center;
-    border-radius: 25px;
-    padding: 10px;
+    border-radius: 35px;
+    padding: 20px;
     margin-top: 20px;
 }
 
@@ -80,9 +84,23 @@ main {
 
 #fig {
    margin: auto;
-   margin-right: 15%;
+   margin-right: 23%;
 }
 
 #fig > img {
     height: 400px;
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-50px);
+    }
+}
+
+section {
+background-color: #4a393b;
 }
