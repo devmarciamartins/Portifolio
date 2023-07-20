@@ -5,12 +5,12 @@
 *{
     margin: 0px;
     padding: 0px;
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
 }
 
 body, html {
-    background:  linear-gradient( -130grad, #8F5D52  40%, #362729 40%);
-    font-family: Arial, Helvetica, sans-serif;
+    background:  linear-gradient( -130grad, #8F5D52  45%, #362729 45%);
+    font-family: 'Quando', serif;
 }
 
 header {
@@ -27,8 +27,9 @@ header {
 }
 
 #logo > img {
-    width: 50px;
-    height: 50px;
+    width: 55px;
+    height: 55px;
+    padding-bottom: 10px;
 }
 
 
@@ -46,6 +47,7 @@ header {
 
 #menu > li {
     display: inline;
+    font-size: 1.3em;
 }
 
 #menu > li > a {
@@ -86,6 +88,10 @@ main {
     font-size: 1.8em;
 }
 
+#linkedin:hover {
+    letter-spacing: 4px;
+}
+
 #fig {
    margin: auto;
    margin-right: 23%;
@@ -106,15 +112,66 @@ main {
 }
 
 #sobre {
-    background-image: linear-gradient( to bottom, #493536 85%, #281D1F 15%);
-    height: 100vh;
+    background-color: #493536;
+    height: 100%;
     display: flex;
+    padding: 130px 20px;
 }
 
-#boneco {
+#boneco-box {
     margin: auto;
-    margin-left: 20%;
+    margin-left: 25%;
 }
+
+#boneco2 {
+    height: 380px;
+}
+
+#logoimg {
+    z-index: 1;
+}
+
+#logo2 {
+    display: flex;
+    z-index: 1;
+    margin-top: -70px;
+    align-items: center;
+    justify-content: center;
+}
+
+#logo2 > img {
+    width: 50px;
+}
+
+#logoimg2 {
+    animation: float2 6s ease-in-out infinite;
+    z-index: 0;
+}
+
+#logoimg3 {
+    animation: float3 6s ease-in-out infinite;
+    z-index: 0;
+}
+
+@keyframes float2 {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(150px);
+    }
+}
+
+@keyframes float3 {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(-150px);
+    }
+}
+
+
 #sobremim {
 height: 400px;
 width: 580px;
@@ -130,8 +187,8 @@ color: white;
 }
 
 #sobremim > p {
+    font-size: 1.5em;
     text-indent: 2em;
     text-align: justify;
     padding: 10px;
-    font-family: Arial, Helvetica, serif;
 }
