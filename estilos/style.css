@@ -5,12 +5,13 @@
 *{
     margin: 0px;
     padding: 0px;
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
 }
 
-body, html {
+body {
     background:  linear-gradient( -130grad, #8F5D52  45%, #362729 45%);
     font-family: 'Quando', serif;
+    margin-bottom: 40px;
 }
 
 header {
@@ -195,6 +196,7 @@ color: white;
 
 #projetos {
     background-color: #352728;
+    text-align: center;
 }
 
 #projetos > h1 {
@@ -238,4 +240,19 @@ color: white;
 #mais {
     display: none;
     gap: 29.5px;
+}
+
+#btnVerMais {
+    background-color: #705656d3;
+    color: aliceblue;
+    padding: 10px 90px;
+    border-radius: 20px;
+}
+
+#repositorio {
+    display: block;
+    color: aliceblue;
+    margin: 40px 0px;
+    padding: 10px 90px;
+    text-decoration: none;
 }
