@@ -5,7 +5,7 @@
 *{
     margin: 0px;
     padding: 0px;
-    /* border: 1px solid blue; */
+    border: 1px solid blue;
 }
 
 body {
@@ -197,6 +197,7 @@ color: white;
 #projetos {
     background-color: #352728;
     text-align: center;
+    padding: 40px 0px;
 }
 
 #projetos > h1 {
@@ -252,7 +253,41 @@ color: white;
 #repositorio {
     display: block;
     color: aliceblue;
-    margin: 40px 0px;
+    margin-top: 40px;
     padding: 10px 90px;
     text-decoration: none;
+}
+
+#habilidades {
+    background-color: #493536;
+    padding: 40px 0px;
+}
+
+#habilidades > h1 {
+    font-size: 3em;
+    font-family: 'Press Start 2P';
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
+.logo-p {
+    display: flex;
+    height: 150px;
+    padding: 0px 20px 20px 0px;
+    gap: 20px;
+}
+
+#iconhtml, #iconcss, #iconjs, #icongithub, #iconlinkedin, #icongit {
+    background-color: #C4C4C4;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+#hab {
+    display:flex;
+    justify-content: center;
+    margin-top: 40px;
+    gap: 60px;
 }
